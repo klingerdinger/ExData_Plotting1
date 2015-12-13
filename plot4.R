@@ -30,11 +30,11 @@ x <- strptime(paste(myData$Date,myData$Time),format = "%d/%m/%Y %H:%M:%S")
     y2 <- myData$Sub_metering_2
     y3 <- myData$Sub_metering_3
     #---- Make the plot
-    plot(x,y1,type = "n",main="",xlab = "",ylab = "Global sub metering")
+    plot(x,y1,type = "n",main="",xlab = "",ylab = "Energy sub metering")
     lines(x,y1,col="black")
     lines(x,y2,col="red")
     lines(x,y3,col="blue")
-    legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col = c("black","red","blue"),lty = c(1,1,1))
+    legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col = c("black","red","blue"),lty = c(1,1,1),bty = "n")
 }
 
 #---- Make plot 3
